@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Ibai Gorordo',
-    url='https://github.com/ibaiGorordo/pyKinectAzure',
+    # url='https://github.com/ibaiGorordo/pyKinectAzure',
     packages=find_packages(),
     install_requires=[
         'numpy',

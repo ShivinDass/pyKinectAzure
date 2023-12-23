@@ -17,7 +17,7 @@ if __name__ == "__main__":
 	device = pykinect.start_device(config=device_config)
 
 	# Start body tracker
-	bodyTracker = pykinect.start_body_tracker(model_type=pykinect.K4ABT_DEFAULT_MODEL)
+	bodyTracker = pykinect.start_body_tracker(model_type=pykinect.K4ABT_LITE_MODEL)
 
 	cv2.namedWindow('Depth image with skeleton',cv2.WINDOW_NORMAL)
 	while True:

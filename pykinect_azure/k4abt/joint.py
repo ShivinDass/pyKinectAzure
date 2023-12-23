@@ -18,7 +18,7 @@ class Joint:
 
 	def numpy(self):
 		return np.array([self.position.x, self.position.y, self.position.z,
-						 self.orientation.w, self.orientation.x, self.orientation.y, self.orientation.z,
+						 self.orientation.x, self.orientation.y, self.orientation.z, self.orientation.w,
 						 self.confidence_level])
 
 	def is_valid(self):
@@ -39,6 +39,6 @@ class Joint:
 		message = (
 			f"{self.name} Joint info: \n"
 			f"\tposition: [{self.position.x},{self.position.y},{self.position.z}]\n"
-			f"\torientation: [{self.orientation.w},{self.orientation.x},{self.orientation.y},{self.orientation.z}]\n"
+			f"\torientation: [{self.orientation.x},{self.orientation.y},{self.orientation.z},{self.orientation.w}]\n"
 			f"\tconfidence: {self.confidence_level} \n\n")
 		return message
